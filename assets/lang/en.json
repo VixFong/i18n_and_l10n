@@ -1,0 +1,68 @@
+{
+  "title": "Book Reading App",
+  "categories": "Categories",
+  "continue_reading": "Continue Reading",
+  "mystery": "Mystery",
+  "romance": "Romance",
+  "fantasy": "Fantasy",
+  "horror": "Horror",
+  "science_fiction": "Science Fiction",
+  "overview": "Overview",
+  
+  "the_da_vinci_code": "The Da Vinci Code",
+  "da_vinci_code_overview": "A murder in the Louvre Museum leads to a thrilling chase across Europe.",
+  "da_vinci_code_page_1": "Robert Langdon, a professor of symbology, is called to the Louvre after the museum's curator is found murdered. A cryptic message near the body leads Langdon on a thrilling chase across Europe.",
+  "da_vinci_code_page_2": "With cryptologist Sophie Neveu, they uncover clues hidden in famous works of art, all connected to the mysterious Priory of Sion. They must solve riddles and codes to uncover a long-hidden secret.",
+  "da_vinci_code_page_3": "As they race against time and adversaries, Langdon and Sophie find themselves entangled in a conspiracy that could shake the foundations of religion and history itself.",
+  
+  "dan_brown": "Dan Brown",
+  
+  "pride_and_prejudice": "Pride and Prejudice",
+  "pride_and_prejudice_overview": "A classic novel of manners and romance between Elizabeth Bennet and Mr. Darcy.",
+  "pride_and_prejudice_page_1": "Elizabeth Bennet meets Mr. Darcy, a wealthy but arrogant man...",
+  "pride_and_prejudice_page_2": "Elizabeth finds herself drawn to Mr. Darcy despite their initial misunderstandings.",
+  
+  "jane_austen": "Jane Austen",
+  
+  "the_hobbit": "The Hobbit",
+  "the_hobbit_overview": "Bilbo Baggins embarks on an epic quest with a group of dwarves to reclaim their home.",
+  "the_hobbit_page_1": "Bilbo Baggins, a quiet hobbit, is visited by Gandalf and a group of dwarves...",
+  "the_hobbit_page_2": "They set off on a journey to reclaim the Lonely Mountain from the dragon Smaug.",
+  
+  "jrr_tolkien": "J.R.R. Tolkien",
+  
+  "moby_dick": "Moby Dick",
+  "herman_melville": "Herman Melville",
+  
+  "war_and_peace": "War and Peace",
+  "leo_tolstoy": "Leo Tolstoy",
+  
+  "popular_book": "The most popular book this week",
+  "finished": "Finished",
+  "reading": "Reading",
+  "saved": "Saved",
+  
+  "home": "Home",
+  "settings": "Settings",
+  "language": "Language",
+  "adventure": "Adventure",
+  "detective": "Detective",
+  "psychology": "Psychology",
+  "business": "Business",
+  
+  "welcome_message": "Welcome to the Book Reading App",
+  "book_detail": "Book Detail",
+  "book_description": "This is a detailed description of the book.",
+  
+  "pages": "Pages",
+  "genre": "Genre",
+  "start_reading": "Start Reading",
+  
+  "favorites": "Favorites",
+  "no_favorites": "You have no favorite books.",
+  "remove_favorite": "Remove from Favorites",
+  "add_favorite": "Add to Favorites",
+  
+  "price": "Price",
+  "published_on": "Published on"
+}

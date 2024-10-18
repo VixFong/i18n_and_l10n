@@ -1,0 +1,65 @@
+{
+  "title": "Aplicación de Lectura de Libros",
+  "categories": "Categorías",
+  "continue_reading": "Continuar Leyendo",
+  "mystery": "Misterio",
+  "romance": "Romance",
+  "fantasy": "Fantasía",
+  "horror": "Terror",
+  "science_fiction": "Ciencia Ficción",
+  "overview": "Visión General",
+  
+  "the_da_vinci_code": "El Código Da Vinci",
+  "da_vinci_code_overview": "Un asesinato en el Museo del Louvre conduce a una emocionante persecución por Europa.",
+  "da_vinci_code_page_1": "Robert Langdon, un profesor de simbología, es llamado al Louvre después de que el curador del museo es encontrado asesinado. Un mensaje críptico cerca del cuerpo lleva a Langdon a una emocionante persecución por Europa.",
+  "da_vinci_code_page_2": "Con la criptóloga Sophie Neveu, descubren pistas ocultas en famosas obras de arte, todas conectadas con el misterioso Priorato de Sion. Deben resolver acertijos y códigos para descubrir un secreto oculto durante mucho tiempo.",
+  "da_vinci_code_page_3": "Mientras corren contra el tiempo y los adversarios, Langdon y Sophie se ven envueltos en una conspiración que podría sacudir los cimientos de la religión y la historia.",
+  
+  "dan_brown": "Dan Brown",
+  
+  "pride_and_prejudice": "Orgullo y Prejuicio",
+  "pride_and_prejudice_overview": "Una novela clásica de costumbres y romance entre Elizabeth Bennet y el Sr. Darcy.",
+  "pride_and_prejudice_page_1": "Elizabeth Bennet conoce al Sr. Darcy, un hombre rico pero arrogante...",
+  "pride_and_prejudice_page_2": "Elizabeth se siente atraída por el Sr. Darcy a pesar de sus malentendidos iniciales.",
+  
+  "jane_austen": "Jane Austen",
+  
+  "the_hobbit": "El Hobbit",
+  "the_hobbit_overview": "Bilbo Baggins emprende una épica búsqueda con un grupo de enanos para recuperar su hogar.",
+  "the_hobbit_page_1": "Bilbo Baggins, un tranquilo hobbit, es visitado por Gandalf y un grupo de enanos...",
+  "the_hobbit_page_2": "Parten en un viaje para recuperar la Montaña Solitaria del dragón Smaug.",
+  
+  "jrr_tolkien": "J.R.R. Tolkien",
+  
+  "moby_dick": "Moby Dick",
+  "herman_melville": "Herman Melville",
+  
+  "war_and_peace": "Guerra y Paz",
+  "leo_tolstoy": "León Tolstói",
+  
+  "popular_book": "El libro más popular de esta semana",
+  "finished": "Finalizado",
+  "reading": "Leyendo",
+  "saved": "Guardado",
+  "home": "Inicio",
+  "settings": "Configuración",
+  "language": "Idioma",
+  "adventure": "Aventura",
+  "detective": "Detective",
+  "psychology": "Psicología",
+  "business": "Negocios",
+  "welcome_message": "Bienvenido a la Aplicación de Lectura de Libros",
+  "book_detail": "Detalles del Libro",
+  "book_description": "Esta es una descripción detallada del libro.",
+  "pages": "Páginas",
+  "genre": "Género",
+  "start_reading": "Comenzar a Leer",
+  
+  "favorites": "Favoritos",
+  "no_favorites": "No tienes libros favoritos.",
+  "remove_favorite": "Eliminar de Favoritos",
+  "add_favorite": "Agregar a Favoritos",
+  
+  "price": "Precio",
+  "published_on": "Publicado el"
+}
