@@ -70,6 +70,7 @@ flutter:
     - assets/lang/es.json
     - assets/lang/vi.json
     - assets/lang/zh.json
+    - assets/lang/ar.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

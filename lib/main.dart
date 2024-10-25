@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_localizations.dart';
 import 'book_detail_page.dart';
 import 'favorite_page.dart';
+import 'dart:ui';
 
 void main() {
   runApp(const MyApp());
@@ -17,33 +18,31 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Locale _locale = const Locale('en', ''); // Default language is English
+  Locale _locale = window.locale; // Initialize with system language
 
   @override
   void initState() {
     super.initState();
-    _loadLanguagePreference(); // Load saved language when app starts
+    _loadLanguagePreference();
   }
 
-  // Load the saved language from SharedPreferences
   Future<void> _loadLanguagePreference() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? languageCode = prefs.getString('language_code');
-    if (languageCode != null) {
-      setState(() {
-        _locale = Locale(languageCode, '');
-      });
-    }
+    
+    // Use saved language or system language if none saved
+    setState(() {
+      _locale = Locale(languageCode ?? window.locale.languageCode, '');
+    });
   }
 
-  // Change the language and save it to SharedPreferences
   void _changeLanguage(Locale locale) async {
     setState(() {
       _locale = locale;
     });
 
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setString('language_code', locale.languageCode); // Save the language code
+    await prefs.setString('language_code', locale.languageCode);
   }
 
   @override
@@ -60,10 +59,17 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: const [
         Locale('en', ''), // English
         Locale('es', ''), // Spanish
-        Locale('ja', ''), // Japanese
         Locale('zh', ''), // Chinese
         Locale('vi', ''), // Vietnamese
+        Locale('ar', ''), // Arabic
       ],
+      // Apply RTL or LTR based on the locale
+      builder: (context, child) {
+        return Directionality(
+          textDirection: AppLocalizations.of(context).isRtl ? TextDirection.rtl : TextDirection.ltr,
+          child: child!,
+        );
+      },
       home: const WelcomePage(),
     );
   }
@@ -129,7 +135,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Image.network(
-                    'https://via.placeholder.com/150',
+                    'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654215925i/61215351.jpg',
                     width: 180,
                     height: 220,
                     fit: BoxFit.cover,
@@ -204,65 +210,64 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget buildBooksTab(BuildContext context) {
-  return SizedBox(
-    height: 200,
-    child: ListView.builder(
-      scrollDirection: Axis.horizontal,
-      itemCount: 6,
-      itemBuilder: (context, index) {
-        List<Map<String, dynamic>> books = [
-          {
-            "titleKey": "the_da_vinci_code",
-            "authorKey": "dan_brown",
-            "rating": 4.9,
-            "overviewKey": "da_vinci_code_overview"
-          },
-          {
-            "titleKey": "pride_and_prejudice",
-            "authorKey": "jane_austen",
-            "rating": 4.8,
-            "overviewKey": "pride_and_prejudice_overview"
-          },
-          {
-            "titleKey": "the_great_gatsby",
-            "authorKey": "f_scott_fitzgerald",
-            "rating": 4.7,
-            "overviewKey": "great_gatsby_overview"
-          },
-          {
-            "titleKey": "the_hobbit",
-            "authorKey": "jrr_tolkien",
-            "rating": 4.9,
-            "overviewKey": "the_hobbit_overview"
-          },
-          {
-            "titleKey": "moby_dick",
-            "authorKey": "herman_melville",
-            "rating": 4.6,
-            "overviewKey": "moby_dick_overview"
-          },
-          {
-            "titleKey": "war_and_peace",
-            "authorKey": "leo_tolstoy",
-            "rating": 4.8,
-            "overviewKey": "war_and_peace_overview"
-          }
-        ];
+    return SizedBox(
+      height: 200,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: 6,
+        itemBuilder: (context, index) {
+          List<Map<String, dynamic>> books = [
+            {
+              "titleKey": "the_da_vinci_code",
+              "authorKey": "dan_brown",
+              "rating": 4.9,
+              "overviewKey": "da_vinci_code_overview"
+            },
+            {
+              "titleKey": "pride_and_prejudice",
+              "authorKey": "jane_austen",
+              "rating": 4.8,
+              "overviewKey": "pride_and_prejudice_overview"
+            },
+            {
+              "titleKey": "the_great_gatsby",
+              "authorKey": "f_scott_fitzgerald",
+              "rating": 4.7,
+              "overviewKey": "great_gatsby_overview"
+            },
+            {
+              "titleKey": "the_hobbit",
+              "authorKey": "jrr_tolkien",
+              "rating": 4.9,
+              "overviewKey": "the_hobbit_overview"
+            },
+            {
+              "titleKey": "moby_dick",
+              "authorKey": "herman_melville",
+              "rating": 4.6,
+              "overviewKey": "moby_dick_overview"
+            },
+            {
+              "titleKey": "war_and_peace",
+              "authorKey": "leo_tolstoy",
+              "rating": 4.8,
+              "overviewKey": "war_and_peace_overview"
+            }
+          ];
 
-        return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: BookCard(
-            titleKey: books[index]['titleKey'],
-            authorKey: books[index]['authorKey'],
-            overviewKey: books[index]['overviewKey'],  // Add overviewKey here
-            rating: books[index]['rating'],
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: BookCard(
+              titleKey: books[index]['titleKey'],
+              authorKey: books[index]['authorKey'],
+              overviewKey: books[index]['overviewKey'],  // Add overviewKey here
+              rating: books[index]['rating'],
             ),
           );
         },
       ),
     );
   }
-
 }
 
 class SideBar extends StatelessWidget {
@@ -301,11 +306,11 @@ class SideBar extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.favorite),
-            title: Text(AppLocalizations.of(context).translateKey('favorites')), // New Favorites Tab
+            title: Text(AppLocalizations.of(context).translateKey('favorites')),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const FavoritePage()), // Navigate to FavoritePage
+                MaterialPageRoute(builder: (context) => const FavoritePage()),
               );
             },
           ),
@@ -323,19 +328,11 @@ class SideBar extends StatelessWidget {
               );
             },
           ),
-          ListTile(
-            leading: const Icon(Icons.settings),
-            title: Text(AppLocalizations.of(context).translateKey('settings')),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
         ],
       ),
     );
   }
 }
-
 
 class SettingsPage extends StatefulWidget {
   final Function(Locale) changeLanguage;
@@ -364,8 +361,8 @@ class _SettingsPageState extends State<SettingsPage> {
         case 'es':
           selectedLanguage = 'Spanish';
           break;
-        case 'ja':
-          selectedLanguage = 'Japanese';
+        case 'ar':
+          selectedLanguage = 'Arabic';
           break;
         case 'zh':
           selectedLanguage = 'Chinese';
@@ -399,8 +396,8 @@ class _SettingsPageState extends State<SettingsPage> {
               child: Text('Spanish'),
             ),
             DropdownMenuItem(
-              value: 'Japanese',
-              child: Text('Japanese'),
+              value: 'Arabic',
+              child: Text('Arabic'),
             ),
             DropdownMenuItem(
               value: 'Chinese',
@@ -418,8 +415,8 @@ class _SettingsPageState extends State<SettingsPage> {
                 widget.changeLanguage(const Locale('en', ''));
               } else if (value == 'Spanish') {
                 widget.changeLanguage(const Locale('es', ''));
-              } else if (value == 'Japanese') {
-                widget.changeLanguage(const Locale('ja', ''));
+              } else if (value == 'Arabic') {
+                widget.changeLanguage(const Locale('ar', ''));
               } else if (value == 'Chinese') {
                 widget.changeLanguage(const Locale('zh', ''));
               } else if (value == 'Vietnamese') {
@@ -436,14 +433,14 @@ class _SettingsPageState extends State<SettingsPage> {
 class BookCard extends StatelessWidget {
   final String titleKey;
   final String authorKey;
-  final String overviewKey;  // Added overviewKey
+  final String overviewKey;
   final double rating;
 
   const BookCard({
     super.key,
     required this.titleKey,
     required this.authorKey,
-    required this.overviewKey,  // Added overviewKey
+    required this.overviewKey,
     required this.rating,
   });
 
@@ -458,13 +455,13 @@ class BookCard extends StatelessWidget {
             builder: (context) {
               print('Overview Key: $overviewKey');
               print('Description: ${AppLocalizations.of(context).translateKey(overviewKey)}');
-              
+
               return BookDetailPage(
                 titleKey: titleKey,
                 authorKey: authorKey,
-                description: AppLocalizations.of(context).translateKey(overviewKey),  // Localized overview
-                pages: '320', 
-                genre: 'Fantasy', 
+                description: AppLocalizations.of(context).translateKey(overviewKey),
+                pages: '320',
+                genre: 'Fantasy',
                 price: 19.99,
                 publicationDate: DateTime.parse('2023-01-01'),
                 rating: 4.9,
@@ -484,7 +481,7 @@ class BookCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.network(
-                'https://via.placeholder.com/150',
+                'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1720313229i/968.jpg',
                 width: 120,
                 height: 150,
                 fit: BoxFit.cover,
@@ -524,4 +521,3 @@ class BookCard extends StatelessWidget {
     );
   }
 }
-

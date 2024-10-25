@@ -4,38 +4,31 @@
   "continue_reading": "继续阅读",
   "mystery": "神秘",
   "romance": "浪漫",
+  "fantasy": "幻想",
   "horror": "恐怖",
+  "action": "动作",
   "science_fiction": "科幻",
   "overview": "概述",
-  
   "the_da_vinci_code": "达·芬奇密码",
   "da_vinci_code_overview": "在卢浮宫发生的一起谋杀案引发了一场横跨欧洲的惊心动魄的追逐。",
   "da_vinci_code_page_1": "符号学教授罗伯特·兰登被召到卢浮宫，因为博物馆馆长被发现遇害。尸体附近的神秘信息引导兰登展开了横跨欧洲的惊险追逐。",
   "da_vinci_code_page_2": "与密码学家苏菲·内芙一起，他们在著名的艺术作品中发现了隐藏的线索，这些线索都与神秘的西庇阿会有关。他们必须破解谜题和密码，以揭开一个长期隐藏的秘密。",
   "da_vinci_code_page_3": "当他们与时间和对手赛跑时，兰登和苏菲发现自己卷入了一场可能动摇宗教和历史基础的阴谋。",
-  
   "dan_brown": "丹·布朗",
-  
   "pride_and_prejudice": "傲慢与偏见",
   "pride_and_prejudice_overview": "伊丽莎白·贝内特和达西先生之间的礼节与爱情的经典小说。",
   "pride_and_prejudice_page_1": "伊丽莎白·贝内特遇到了达西先生，一个富有但傲慢的人...",
   "pride_and_prejudice_page_2": "尽管有初步的误解，伊丽莎白发现自己逐渐被达西先生吸引。",
-  
   "jane_austen": "简·奥斯汀",
-  
   "the_hobbit": "霍比特人",
   "the_hobbit_overview": "比尔博·巴金斯与一群矮人一起踏上了寻找家园的史诗冒险。",
   "the_hobbit_page_1": "霍比特人比尔博·巴金斯过着宁静的生活，直到甘道夫和一群矮人拜访了他...",
   "the_hobbit_page_2": "他们踏上了前往孤山，从巨龙史矛革手中夺回家园的旅程。",
-  
   "jrr_tolkien": "J.R.R. 托尔金",
-  
   "moby_dick": "白鲸记",
   "herman_melville": "赫尔曼·麦尔维尔",
-  
   "war_and_peace": "战争与和平",
   "leo_tolstoy": "列夫·托尔斯泰",
-  
   "popular_book": "本周最受欢迎的书籍",
   "finished": "已完成",
   "reading": "正在阅读",
@@ -50,17 +43,17 @@
   "welcome_message": "欢迎来到阅读应用程序",
   "book_detail": "书籍详情",
   "book_description": "这是一本书的详细描述。",
-  "pages": "页",
-  "fantasy": "幻想",
+  "pages": "页数",
   "genre": "类型",
   "start_reading": "开始阅读",
-  
   "favorites": "收藏夹",
   "no_favorites": "您没有收藏的书籍。",
   "remove_favorite": "从收藏夹中移除",
   "add_favorite": "添加到收藏夹",
-  
   "price": "价格",
-  "published_on": "出版日期"
+  "published_on": "出版日期",
 
+  "the_great_gatsby": "了不起的盖茨比",
+  "f_scott_fitzgerald": "斯科特·菲茨杰拉德",
+  "great_gatsby_overview": "这个故事由尼克·卡拉威讲述，探讨了爱情、痴迷和美国梦的主题，盖茨比试图重燃与黛西·布坎南的过去的浪漫史"
 }

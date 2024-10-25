@@ -9,36 +9,26 @@
   "action": "Hành động",
   "science_fiction": "Khoa học viễn tưởng",
   "overview": "Tổng quan",
-  "gerne": "Thể loại",
-  
   "the_da_vinci_code": "Mật mã Da Vinci",
   "da_vinci_code_overview": "Một vụ án mạng tại Bảo tàng Louvre dẫn đến một cuộc truy đuổi ly kỳ trên khắp châu Âu.",
   "da_vinci_code_page_1": "Robert Langdon, một giáo sư về biểu tượng học, được gọi đến Louvre sau khi người quản lý bảo tàng bị sát hại. Một thông điệp bí ẩn gần thi thể đã dẫn Langdon vào một cuộc truy đuổi ly kỳ qua châu Âu.",
   "da_vinci_code_page_2": "Cùng với nhà mật mã học Sophie Neveu, họ phát hiện ra manh mối ẩn giấu trong những tác phẩm nghệ thuật nổi tiếng, tất cả đều liên quan đến Hội kín Priory of Sion bí ẩn. Họ phải giải quyết những câu đố và mã để khám phá một bí mật đã bị giấu kín từ lâu.",
   "da_vinci_code_page_3": "Khi họ chạy đua với thời gian và đối thủ, Langdon và Sophie bị cuốn vào một âm mưu có thể làm rung chuyển nền tảng của tôn giáo và lịch sử.",
-  
   "dan_brown": "Dan Brown",
-  
   "pride_and_prejudice": "Kiêu hãnh và định kiến",
   "pride_and_prejudice_overview": "Một tiểu thuyết cổ điển về lễ nghi và tình yêu giữa Elizabeth Bennet và ngài Darcy.",
   "pride_and_prejudice_page_1": "Elizabeth Bennet gặp ngài Darcy, một người đàn ông giàu có nhưng kiêu ngạo...",
   "pride_and_prejudice_page_2": "Elizabeth thấy mình bị thu hút bởi ngài Darcy mặc dù những hiểu lầm ban đầu.",
-  
   "jane_austen": "Jane Austen",
-  
   "the_hobbit": "Người Hobbit",
   "the_hobbit_overview": "Bilbo Baggins bắt đầu một cuộc hành trình sử thi với một nhóm người lùn để lấy lại ngôi nhà của họ.",
   "the_hobbit_page_1": "Bilbo Baggins, một hobbit yên bình, được Gandalf và một nhóm người lùn đến thăm...",
   "the_hobbit_page_2": "Họ bắt đầu một cuộc hành trình để lấy lại Núi Cô Đơn từ con rồng Smaug.",
-  
   "jrr_tolkien": "J.R.R. Tolkien",
-  
   "moby_dick": "Moby Dick",
   "herman_melville": "Herman Melville",
-  
   "war_and_peace": "Chiến tranh và hòa bình",
   "leo_tolstoy": "Leo Tolstoy",
-  
   "popular_book": "Cuốn sách phổ biến nhất trong tuần này",
   "finished": "Đã hoàn thành",
   "reading": "Đang đọc",
@@ -56,12 +46,17 @@
   "pages": "Số trang",
   "genre": "Thể loại",
   "start_reading": "Bắt đầu đọc",
-  
   "favorites": "Yêu thích",
   "no_favorites": "Bạn chưa có sách yêu thích.",
   "remove_favorite": "Xóa khỏi Yêu thích",
   "add_favorite": "Thêm vào Yêu thích",
-  
   "price": "Giá",
-  "published_on": "Ngày xuất bản"
+  "published_on": "Ngày xuất bản",
+
+  "the_great_gatsby": "Gatsby vĩ đại",
+  "f_scott_fitzgerald": "Scott Fitzgerald",
+  "great_gatsby_overview": "Câu chuyện do Nick Carraway thuật lại, khám phá các chủ đề về tình yêu, nỗi ám ảnh và Giấc mơ Mỹ khi Gatsby cố gắng khơi lại mối tình lãng mạn trong quá khứ với Daisy Buchanan."
+  
+  
+  
 }
