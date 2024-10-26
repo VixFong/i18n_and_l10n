@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'The Fellowship of the Ring',
+                          AppLocalizations.of(context).translateKey('the_fellowship_of_the_ring'),
                           style: Theme.of(context).textTheme.headlineMedium,
                         ),
                         const SizedBox(height: 10),
